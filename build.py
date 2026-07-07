@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-import http
-import subprocess
+
 from argparse import ArgumentParser
 from pathlib import Path
 from typing import Any, Dict
@@ -122,9 +121,4 @@ def build():
             "posts": posts,
             "updated": posts[0]["source_modified"],
         },
-    )
-
-    subprocess.Popen(
-        "bunx @tailwindcss/cli -i ./pantry/style.css -o ./output/style.css",
-        shell=True,
     )

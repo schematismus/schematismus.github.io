@@ -46,6 +46,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install bun dependencies
+        run: bun install
+
+      - name: Compile TypeScript
+        run: bunx @tailwindcss/cli -i ./pantry/style.css -o ./output/style.css
+
       - name: Build site
 
         # if hosting at the root of a domain, use:

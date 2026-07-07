@@ -1,5 +1,6 @@
 import http.server
 import os
+import subprocess
 import threading
 import time
 from pathlib import Path
@@ -31,6 +32,10 @@ class ChangeHandler(FileSystemEventHandler):
             return
         print(f"[{event.event_type}] {event.src_path}")
         build()
+        subprocess.Popen(
+            "bunx @tailwindcss/cli -i ./pantry/style.css -o ./output/style.css",
+            shell=True,
+        )
 
 
 def start_server(directory="./output", port=8000):
@@ -49,6 +54,10 @@ def start_server(directory="./output", port=8000):
 
 if __name__ == "__main__":
     build()
+    subprocess.Popen(
+        "bunx @tailwindcss/cli -i ./pantry/style.css -o ./output/style.css",
+        shell=True,
+    )
     watch_path = "."
     handler = ChangeHandler()
     observer = Observer()
