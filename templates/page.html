@@ -1,9 +1,14 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block page_title %}{{ frontmatter.title }}{%
+endblock %} {% block content %}
+<div class="prose mb-10">
+    <h1 class="font-bold font-stretch-condensed text-4xl">
+        {{ frontmatter.title }}
+    </h1>
 
-{% block page_title %}{{ frontmatter.title }}{% endblock %}
-
-{% block content %}
-  <h1>{{ frontmatter.title }}</h1>
-
-  {{ content }}
+    <div
+        class="prose mt-10 prose-img:text-center prose-p:font-serif prose-headings:font-bold prose-h1:text-3xl prose-h2:text-2xl prose-headings:font-stretch-condensed"
+    >
+        {{ content }}
+    </div>
+</div>
 {% endblock %}

@@ -1,21 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}{% block page_title %}{% endblock %} | {{ site.title }}{% endblock %}</title>
-    {% if site.description %}
-      <meta name="description" content="{{ site.description }}">
-    {% endif %}
-    <link rel="stylesheet" href="{{ calc_url('style.css') }}">
-    <link rel="alternate" type="application/atom+xml" href="{{ site.host }}{{ calc_url(site.feed_url) }}">
-  </head>
-  <body>
-    <main>
-      {% block content %}{% endblock %}
-    </main>
-    <aside>
-      {% include "_sidebar.html" %}
-    </aside>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+            {% block title %}{% block page_title %}{% endblock %} | {{
+            site.title }}{% endblock %}
+        </title>
+        {% if site.description %}
+        <meta name="description" content="{{ site.description }}" />
+        {% endif %}
+        <link rel="stylesheet" href="{{ calc_url('style.css') }}" />
+        <link
+            rel="alternate"
+            type="application/atom+xml"
+            href="{{ site.host }}{{ calc_url(site.feed_url) }}"
+        />
+    </head>
+    <body class="flex flex-col min-h-screen overflow-y-auto">
+        <header
+            id="site-header"
+            class="sticky top-0 z-10 w-full h-fit bg-amber-400 border-b-amber-800/30 transition-all duration-200 ease-in-out py-6 text-2xl px-20 flex justify-between xl:px-84"
+        >
+            <a href="/">
+                <img
+                    id="header-logo"
+                    src="/logo.svg"
+                    class="w-44 transition-all duration-200 ease-in-out"
+                />
+            </a>
+
+            <nav
+                class="flex-row flex text-sm font-bold items-center gap-10 font-stretch-condensed"
+            >
+                <a href="/" class="hover:text-amber-700/80 black">Home</a>
+                <a
+                    href="{{ calc_url('/schematismus') }}"
+                    class="hover:text-amber-700/80 black"
+                    >The Schematismus</a
+                >
+                <a
+                    href="{{ calc_url('/about/') }}"
+                    class="hover:text-amber-700/80 black"
+                    >Digital Wizardry</a
+                >
+                <a
+                    href="{{ calc_url('/team/') }}"
+                    class="hover:text-amber-700/80 black"
+                    >Team &amp; Partners</a
+                >
+            </nav>
+        </header>
+
+        <div
+            class="flex flex-col sm:flex-row px-20 mt-10 mb-10 gap-10 xl:mx-64"
+        >
+            <main class="flex-1">
+                <div>{% block content %}{% endblock %}</div>
+            </main>
+            <aside class="w-fit shrink-0 max-w-md wrap-break-word">
+                {% include "_sidebar.html" %}
+            </aside>
+        </div>
+        <footer
+            class="mt-auto w-full bg-amber-400/20 py-3 flex items-center justify-between px-20 text-sm"
+        >
+            <span>© 2026 Unlocking The Schematismus</span>
+            <nav class="flex gap-4 text-xs">
+                <a href="#">Privacy</a>
+                <a href="#">Contact</a>
+            </nav>
+        </footer>
+    </body>
+
+    <script>
+        const header = document.getElementById("site-header");
+        const header_logo = document.getElementById("header-logo");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 10) {
+                header.classList.add("py-3", "text-base", "shadow-2xl");
+                header.classList.remove("py-6", "text-xl");
+                header_logo.classList.remove("w-44");
+                header_logo.classList.add("w-32");
+            } else {
+                header.classList.add("py-6", "text-xl");
+                header.classList.remove("py-3", "text-2xl", "shadow-2xl");
+                header_logo.classList.remove("w-32");
+                header_logo.classList.add("w-44");
+            }
+        });
+    </script>
 </html>

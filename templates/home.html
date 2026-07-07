@@ -1,31 +1,80 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block title %} {{ site.title }} {% endblock %} {%
+block content %}
+<div class="homepage">
+    <h1 class="text-5xl font-bold font-stretch-condensed mb-10">
+        Unlocking the Schematismus
+    </h1>
 
-{% block title %}{{ site.title }}{% endblock %}
-
-{% block content %}
-  <div class="homepage post-list">
-    {% for post in posts %}
-      <div class="post">
-        <h2>
-          <a href="{{ calc_url(post) }}">
-            {{ post.frontmatter.title }}
-          </a>
-        </h2>
-        {% with frontmatter = post.frontmatter %}
-          {% include "_metadata.html" %}
-        {% endwith %}
-        <div class="post-excerpt">{{ post.excerpt }}</div>
-        <div class="post-meta2">
-          <div>
-            {% with tags = post.tags %}
-              {% include "_tags.html" %}
-            {% endwith %}
-          </div>
-          <div class="post-more">
-            <a href="{{ calc_url(post) }}">read more…</a>
-          </div>
+    <div
+        class="prose mt-10 prose-img:text-center prose-p:font-serif prose-headings:font-bold prose-h1:text-3xl prose-h2:text-2xl prose-headings:font-stretch-condensed"
+    >
+        <h2>Die Entstehung der zentraleuropäischen Mittelklasse</h2>
+        <p>
+            Wer waren die Menschen, die das Habsburgerreich im "langen 19.
+            Jahrhundert" (1789–1914) am Laufen hielten – Beamte, Förster,
+            Lehrerinnen, Amtsveterinäre, Postangestellte? Das Projekt "Unlocking
+            the Schematismus" macht sie sichtbar. Grundlage dafür ist eine der
+            reichhaltigsten, aber bislang kaum systematisch ausgewerteten
+            Quellen zur Verwaltungsgeschichte Zentraleuropas: das Hof- und
+            Staatshandbuch der Habsburgermonarchie, genannt Schematismus, ein
+            zwischen 1702 und 1918 beinahe jährlich erschienenes Verzeichnis mit
+            insgesamt rund 150 Bänden mit Zehntausenden Namen, Titeln und
+            Funktionen.
+        </p>
+        <div class="w-1/2 ml-2 my-2 float-right">
+            <figure>
+                <img src="/schematismus.png" class="rounded-md border" />
+                <figcaption>An index page of the Schematismus</figcaption>
+            </figure>
         </div>
-      </div>
-    {% endfor %}
-  </div>
+        <p>
+            Ein transdisziplinäres Team aus Historiker:innen, Digital Humanists
+            und Informatiker:innen an den Universitäten Graz und Wien sowie der
+            TU Graz nutzt Methoden des maschinellen Lernens, um diese riesige,
+            komplex strukturierte Quelle erstmals vollständig zu erschließen.
+            Aus den gescannten Seiten entsteht ein durchsuchbarer Wissensgraph,
+            der zeigt, wie sich Karrieren, soziale Mobilität und Netzwerke über
+            Generationen hinweg entwickelten, und wie daraus eine neue
+            gesellschaftliche Mitte entstand, die den modernen Staat mittrug.
+        </p>
+
+        <p>
+            Das Projekt wird vom österreichischen Wissenschaftsfonds FWF als
+            Forschungsgruppe (FG) für fünf Jahre gefördert und verbindet
+            historische Fragestellungen mit den neuesten Werkzeugen der
+            Datenwissenschaft.
+        </p>
+
+        <h2>The Emergence of the Habsburg Middle Class</h2>
+
+        <p>
+            Who kept the Habsburg Empire running during the "long 19th century"
+            (according to Eric Hobsbawm the era between the French and the
+            Russian Revolution, 1789–1914) — the officials, foresters, teachers,
+            veterinarians, postal workers? The project "Unlocking the
+            Schematismus" brings them into view. Its foundation is one of the
+            richest, yet so far barely explored, sources for the administrative
+            history of Central Europe: the Hof- und Staatshandbuch of the
+            Habsburg Monarchy, commonly referred to as Schematismus, an annually
+            published directory comprising roughly 150 volumes with tens of
+            thousands of names, titles, and functions.
+        </p>
+        <p>
+            A transdisciplinary team of historians, digital humanists, and
+            computer scientists at the Universities of Graz and Vienna and Graz
+            University of Technology is using machine-learning methods to make
+            this vast, structurally complex source fully accessible for the
+            first time. From scanned pages, the project builds a searchable
+            knowledge graph that reveals how careers, social mobility, and
+            networks developed across generations, and how, in the process, a
+            new social middle class emerged that helped sustain the modern
+            state.
+        </p>
+        <p>
+            The project is funded by the Austrian Science Fund (FWF) through its
+            Research Group (RG) Programme for five years, bringing historical
+            questions into dialogue with the latest tools of data science.
+        </p>
+    </div>
+</div>
 {% endblock %}

@@ -1,7 +1,11 @@
 {% if tags %}
-  <div class="tags">
+<div class="tags">
     {% for tag_detail in tags %}
-      <a href="{{ calc_url(tag_detail) }}">{{ tag_detail.tag }}</a>
+    <a
+        href="{{ calc_url(tag_detail) }}"
+        class="p-1 px-2 text-xs text-amber-700 border-[0.5px] border-amber-600 rounded-md bg-amber-200 hover:bg-amber-100"
+        >{{ tag_detail.tag }}</a
+    >
     {% endfor %}
-  </div>
+</div>
 {% endif %}

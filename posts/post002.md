@@ -1,9 +1,8 @@
 ---
-title: My Second Post
-author: James Tauber
+title: Somethign else happened
+author: Richard Hadden
 date: 2025-09-13
 ---
-This is my second post using this blog template.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex. Mauris dapibus risus quis suscipit vulputate. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices.
 
