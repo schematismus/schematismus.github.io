@@ -48,6 +48,13 @@ def build():
     POSTS_DIR = Path(__file__).parent / "posts"
     PAGES_DIR = Path(__file__).parent / "pages"
 
+    print(f"cwd: {Path.cwd()}")
+    print(f"__file__: {__file__}")
+    print(f"POSTS_DIR: {POSTS_DIR.resolve()}  exists={POSTS_DIR.exists()}")
+    print(f"PAGES_DIR: {PAGES_DIR.resolve()}  exists={PAGES_DIR.exists()}")
+    print(f"posts found: {sorted(p.name for p in POSTS_DIR.glob('*.md'))}")
+    print(f"pages found: {sorted(p.name for p in PAGES_DIR.glob('*.md'))}")
+
     tags = {}
 
     def collect_tags():
