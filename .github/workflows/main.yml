@@ -54,15 +54,15 @@ jobs:
       - name: Install bun dependencies
         run: bun install
 
-      - name: Compile TypeScript
-        run: bunx @tailwindcss/cli -i ./pantry/style.css -o ./output/style.css
-
       - name: Build site
 
         # if hosting at the root of a domain, use:
         # run: python build.py
         run: |
           python build.py
+
+      - name: Compile TypeScript
+        run: bunx @tailwindcss/cli -i ./pantry/style.css -o ./output/style.css
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
