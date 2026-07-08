@@ -129,3 +129,7 @@ def build():
             "updated": posts[0]["source_modified"],
         },
     )
+
+
+if __name__ == "__main__":
+    build()
