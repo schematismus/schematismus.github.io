@@ -2,4 +2,5 @@
 @layer base; /* raw HTML element defaults — h1, body, a, etc. */
 @layer components; /* reusable class combos — .btn, .card, etc. */
 @layer utilities; /* single-purpose utility classes — .flex, .mt-4, etc. */
+@source "../templates/**/*.html";
 @plugin "@tailwindcss/typography";
