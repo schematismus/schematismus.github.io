@@ -20,7 +20,7 @@
     <body class="flex flex-col min-h-screen overflow-y-auto">
         <header
             id="site-header"
-            class="sticky top-0 z-10 w-full h-fit bg-amber-400 border-b-amber-800/30 transition-all duration-200 ease-in-out py-6 text-2xl px-20 flex justify-between xl:px-84"
+            class="sticky top-0 z-10 w-full h-fit bg-amber-200 border-b-amber-800/30 transition-all duration-200 ease-in-out py-6 text-2xl px-20 flex justify-between xl:px-84"
         >
             <a href="/">
                 <img
@@ -78,13 +78,23 @@
         const header_logo = document.getElementById("header-logo");
         window.addEventListener("scroll", () => {
             if (window.scrollY > 10) {
-                header.classList.add("py-3", "text-base", "shadow-2xl");
-                header.classList.remove("py-6", "text-xl");
+                header.classList.add(
+                    "py-3",
+                    "text-base",
+                    "shadow-2xl",
+                    "bg-amber-400",
+                );
+                header.classList.remove("py-6", "text-xl", "bg-amber-200");
                 header_logo.classList.remove("w-44");
                 header_logo.classList.add("w-32");
             } else {
-                header.classList.add("py-6", "text-xl");
-                header.classList.remove("py-3", "text-2xl", "shadow-2xl");
+                header.classList.add("py-6", "text-xl", "bg-amber-200");
+                header.classList.remove(
+                    "py-3",
+                    "text-2xl",
+                    "shadow-2xl",
+                    "bg-amber-400",
+                );
                 header_logo.classList.remove("w-32");
                 header_logo.classList.add("w-44");
             }
