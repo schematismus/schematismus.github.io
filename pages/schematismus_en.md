@@ -1,5 +1,6 @@
 ---
 title: The Schematismus — A Source, A Genre, A Self-Portrait of the State
+lang: en
 ---
 The Habsburg Monarchy's court and state manual, commonly known as the Schematismus, belongs to a type of publication that emerged from the late 17th century onward across nearly all territories of the Holy Roman Empire and, later, its successor states: the official directory, or Amtsverzeichnis. Published periodically, usually annually, these works — known to contemporaries as address, court, or state calendars — supplemented a traditional calendar section with systematic listings of a territory's administrative, court, and military personnel. Where the calendar section was absent, such publications were called "Amtshandbücher" (official manuals) or, precisely, "Schematismen." What united the entire genre was its official or quasi-official character: publication, editing, and distribution were controlled by the ruling authorities, and the personnel lists were supplied by the administrations themselves. The Habsburg hereditary lands produced some of the very earliest examples of this genre — the Viennese Hof- und Ehrenkalender from 1692, followed by the Kaiserliche, Königliche und Erzherzogliche Staats- und Standeskalender from 1701.
 

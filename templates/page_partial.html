@@ -1,5 +1,4 @@
-{% extends "base.html" %} {% block page_title %}{{ frontmatter.title }}{%
-endblock %} {% block content %}
+{% block content %}
 <div class="prose mb-10">
   <h1 class="text-4xl font-bold font-stretch-condensed">
     {{ frontmatter.title }}
@@ -13,7 +12,7 @@ endblock %} {% block content %}
 </div>
 {% endblock %}
 
-<div class="lang-switch" hx-swap-oob="true">
+<div id="lang-switch" hx-swap-oob="true">
   {% if lang == 'en' %} <span class="mr-2 text-amber-600">EN</span> |
   <a id="lang-de" class="ml-2 hover:text-amber-700/80" href="{{ alt_lang_url }}"
     >DE</a

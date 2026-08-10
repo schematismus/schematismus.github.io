@@ -1,22 +1,21 @@
-<div class="homepage post-list flex-col gap-10 flex">
-    <h1 class="font-stretch-extra-condensed">Latest News</h1>
-    {% for post in posts %}
-    <div class="post bg-amber-100 p-3 rounded-md">
-        <h2 class="font-semibold font-stretch-extra-condensed mb-2">
-            <a href="{{ calc_url(post) }}"> {{ post.frontmatter.title }} </a>
-        </h2>
-        {% with frontmatter = post.frontmatter %} {% include "_metadata.html" %}
-        {% endwith %}
-        <div class="post-excerpt prose line-clamp-2">{{ post.excerpt }}</div>
-        <div class="post-meta2">
-            <div>
-                {% with tags = post.tags %} {% include "_tags.html" %} {%
-                endwith %}
-            </div>
-            <div class="post-more">
-                <a href="{{ calc_url(post) }}">read more…</a>
-            </div>
-        </div>
+<div class="homepage post-list flex flex-col gap-10">
+  <h1 class="font-stretch-extra-condensed">Latest News</h1>
+  {% for post in posts %} {% if post.frontmatter.lang == lang %}
+  <div class="post rounded-md bg-amber-100 p-3">
+    <h2 class="mb-2 font-semibold font-stretch-extra-condensed">
+      <a href="{{ calc_url(post) }}"> {{ post.frontmatter.title }} </a>
+    </h2>
+    {% with frontmatter = post.frontmatter %} {%
+    include "_metadata.html" %} {% endwith %}
+    <div class="post-excerpt prose line-clamp-2">{{ post.excerpt }}</div>
+    <div class="post-meta2">
+      <div>
+        {% with tags = post.tags %} {% include "_tags.html" %} {% endwith %}
+      </div>
+      <div class="post-more">
+        <a href="{{ calc_url(post) }}">read more…</a>
+      </div>
     </div>
-    {% endfor %}
+  </div>
+  {% endif %} {% endfor %}
 </div>

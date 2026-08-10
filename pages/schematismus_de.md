@@ -1,0 +1,20 @@
+---
+title: Der Schematismus – Eine Quelle, ein Genre, ein Selbstporträt des Staates
+lang: de
+---
+
+
+
+## Von der höfischen Repräsentation zum Instrument der Staatenkunde
+
+Amtsverzeichnisse wie der Schematismus dienten ursprünglich vor allem der höfischen Selbstdarstellung: Die langen Beamtenlisten bildeten eine Art Parade des fürstlichen Apparats, ein sichtbares Zeugnis von Rang und Stellung des Herrschers. Ab dem späten 18. Jahrhundert begann sich diese Nutzung zu verschieben. Gelehrte begannen, dieselben Listen quantitativ auszuwerten, etwa um das Verhältnis von Verwaltungspersonal zur Gesamtbevölkerung oder das relative Gewicht einzelner Verwaltungszweige zu bestimmen. Was einst dem höfischen Glanz gedient hatte, wurde so zum Werkzeug der Staatenkunde und zuweilen auch zum Vehikel der Hofkritik: Daten, die aus Repräsentationsgründen veröffentlicht worden waren, gelangten in die Hände einer zunehmend kritischen, bürgerlichen Öffentlichkeit.
+
+## Der Schematismus – Eine Quelle, ein Genre, ein Selbstporträt des Staates
+
+Das Hof- und Staatshandbuch der Habsburgermonarchie, gemeinhin als Schematismus bekannt, gehört zu einem Publikationstyp, der sich ab dem späten 17. Jahrhundert in nahezu allen Territorien des Heiligen Römischen Reiches und später in dessen Nachfolgestaaten herausbildete: dem amtlichen Verzeichnis oder Amtsverzeichnis. Periodisch, meist jährlich, erschienen diese Werke – von den Zeitgenossen als Adress-, Hof- oder Staatskalender bezeichnet – und ergänzten einen traditionellen Kalenderteil um systematische Auflistungen des Verwaltungs-, Hof- und Militärpersonals eines Territoriums. Fehlte der Kalenderteil, wurden solche Publikationen als „Amtshandbücher" oder, genauer, als „Schematismen" bezeichnet. Was das gesamte Genre einte, war sein amtlicher oder halbamtlicher Charakter: Veröffentlichung, Redaktion und Verbreitung lagen in den Händen der herrschenden Gewalten, und die Personallisten wurden von den Verwaltungen selbst geliefert. Die habsburgischen Erblande brachten einige der frühesten Beispiele dieses Genres hervor: den Wiener Hof- und Ehrenkalender von 1692, gefolgt vom Kaiserlichen, Königlichen und Erzherzoglichen Staats- und Standeskalender von 1701.
+
+## Der habsburgische Schematismus im Besonderen
+
+Innerhalb dieser umfassenderen europäischen Geschichte des Genres nimmt der habsburgische Staatsschematismus eine besondere Stellung ein. Er erschien fast durchgehend von 1702 bis 1918 und umfasst rund 145 Bände, von etwa 150 Seiten im Gründungsjahr bis zu nahezu 1.900 Seiten in der letzten Ausgabe. Über mehr als zwei Jahrhunderte dokumentiert er die Verwaltungs- und Repräsentationselite Mitteleuropas: Namen, Titel, Funktionen, Beförderungen, Prüfungskommissionen für Berufe von Tierärzten bis Ingenieuren, neben Adel, Militär und Klerus. Ab dem zweiten Viertel des 19. Jahrhunderts fanden zunehmend auch Angehörige des niederen Staatsdienstes und einfache Verwaltungsangestellte Eingang in seine Seiten. Der Schematismus ist somit weit mehr als eine trockene Beamtenliste. Er ist ein „emisches" Selbstporträt des Staates, das offenbart, wie die Habsburgermonarchie sich selbst verstand, strukturierte und benannte, Widersprüche eingeschlossen (wie etwa an den nach 1867 parallel erschienenen deutsch- und ungarischsprachigen Ausgaben ersichtlich).
+
+Gerade dieser Detailreichtum macht den Schematismus zu einer der wertvollsten, aber auch anspruchsvollsten, Quellen der Verwaltungsgeschichte: mehrspaltige Layouts, tief verschachtelte Hierarchien, Tabellen und Sonderzeichen wie geschweifte Klammern haben einer systematischen, quantitativen Analyse bislang widerstanden. Genau hier setzt das Projekt an. Mithilfe von maschinellen Lernverfahren macht „Unlocking the Schematismus" diese rund 130.000 bis 150.000 gedruckten Seiten erstmals vollständig durchsuchbar und analysierbar, und eröffnet damit den Zugang zu Zehntausenden von Karrieren und Biografien, die zusammengenommen ein neues Bild des habsburgischen Bürgertums über das lange 19. Jahrhundert hinweg zeichnen.
