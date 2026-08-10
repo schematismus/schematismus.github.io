@@ -32,7 +32,7 @@ def partial(_: Ryland, context: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def group_by_lang() -> Tube:
-    def inner(_, context: Context) -> Context:
+    def inner(_, context: dict[str, Any]) -> dict[str, Any]:
 
         filename, lang = context["source_path"].stem.split("_")
 
