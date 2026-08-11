@@ -35,9 +35,9 @@
         class="flex flex-row items-center gap-10 text-sm font-bold font-stretch-condensed"
       >
         {% if lang == 'de' %}
-        <a href="/" class="black hover:text-amber-700/80">Home</a>
+        <a href="/" class="black uppercase hover:text-amber-700/80">Home</a>
         {% elif lang == 'en' %}
-        <a href="/en/" class="black hover:text-amber-700/80">Home</a>
+        <a href="/en/" class="black uppercase hover:text-amber-700/80">Home</a>
         {% endif %}
 
         <a
@@ -46,7 +46,7 @@
           hx-target="#contents"
           hx-push-url="/{{ lang }}{{ calc_url('/schematismus/') }}"
           hx-swap-oob="true"
-          class="black hover:text-amber-700/80"
+          class="black uppercase hover:text-amber-700/80"
         >
           The Schematismus
         </a>
@@ -56,7 +56,7 @@
           hx-target="#contents"
           hx-push-url="/{{ lang }}{{ calc_url('/about/') }}"
           hx-swap-oob="true"
-          class="black hover:text-amber-700/80"
+          class="black uppercase hover:text-amber-700/80"
         >
           Digital Wizardry</a
         >
@@ -66,7 +66,7 @@
           hx-target="#contents"
           hx-push-url="/{{ lang }}{{ calc_url('/team/') }}"
           hx-swap-oob="true"
-          class="black hover:text-amber-700/80"
+          class="black uppercase hover:text-amber-700/80"
         >
           Team &amp; Partners</a
         >

@@ -114,6 +114,20 @@ def build():
         reverse=True,
     )
 
+    pages = sorted(
+        [
+            ryland.process(
+                load(page_file),
+                markdown(frontmatter=True),
+                group_by_lang(),
+                calc_url(),
+            )
+            for page_file in PAGES_DIR.glob("*.md")
+        ],
+        key=lambda post: 1,
+    )
+    print([p["source_path"] for p in pages])
+
     for page_file in PAGES_DIR.glob("*.md"):
         ryland.render(
             load(page_file),
